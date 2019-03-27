@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Sensor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fSensor_proximity"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fSensor_proximity"
+        android:layout_marginTop="5dp"
+        android:layout_width="540px"
+        android:layout_height="270px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        >
+
+        <TextView
+            android:id="@+id/label_proximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sensor_proximity"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Proximity"/>
+
+        <TextView
+            android:id="@+id/sensor_proximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_proximity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=" " />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fSensor_accelerometer"
+        android:layout_marginTop="5dp"
+        android:layout_width="540px"
+        android:layout_height="270px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        >
+
+        <TextView
+            android:id="@+id/label_accelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sensor_accelerometer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Accelerometer"/>
+
+        <TextView
+            android:id="@+id/sensor_accelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_accelerometer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=" " />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fSensor_light"
+        android:layout_marginTop="5dp"
+        android:layout_width="540px"
+        android:layout_height="270px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fSensor_proximity"
+        >
+
+        <TextView
+            android:id="@+id/label_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sensor_light"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Light"/>
+
+        <TextView
+            android:id="@+id/sensor_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=" " />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fSensor_temperature"
+        android:layout_marginTop="5dp"
+        android:layout_width="540px"
+        android:layout_height="270px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fSensor_accelerometer"
+        >
+
+        <TextView
+            android:id="@+id/label_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sensor_temperature"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Temperature"/>
+
+        <TextView
+            android:id="@+id/sensor_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_temperature"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=" " />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
